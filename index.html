@@ -1,9 +1,70 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>Ibrahim Awoleiro</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+  <head>
+    <title>Fundamentals Of CSS</title>
+    <link href="./resources/css/index.css" rel="Stylesheet">
+  </head>
+  <body class=photo>
+    <header class="header">
+      <h2 id="right">Selectors</h2>
+    </header>
+    <main>
+      <table border="1">
+        <tr>
+          <th>
+            Types of Selectors
+          </th>
+          <th>What it does</th>
+        </tr>
+        <tr>
+          <td>Class Selectors</td>
+          <td>Selects an element by class.<br>
+To select an HTML element by its class using CSS, a period (.) must be prepended to the class’s name. In the example above, the class is brand, so the CSS selector for it is .brand.</td>
+        </tr>
+        <tr>
+          <td>
+            ID Selectors
+          </td>
+          <td>
+        Selects based on id of an element
+<h1 id='large-title'> ... </h1>
+In contrast to class which accepts multiple values, and can be used broadly throughout an HTML document, an element’s id can only have a single value, and only be used once per page.
+          </td>
+        </tr>
+        <tr>
+          <td>Universal Selector</td>
+          <td>You learned how the type selector selects all elements of a given type. Well, the universal selector selects all elements of any type.
+Targeting all of the elements on the page has a few specific use cases, such as resetting default browser styling, or selecting all children of a parent element. Don’t worry if you don’t understand the use cases right now—we will get to them later on in our Learn CSS journey.
+The universal selector uses the * character in the same place where you specified the type selector in a ruleset, like so:
+* { 
+  font-family: Verdana;
+}
+In the code above, every text element on the page will have its font changed to Verdana.</td>
+
+        </tr>
+        <tr>
+          <td>
+          pseudo-class
+          </td>
+          <td>
+            You may have observed how the appearance of certain elements can change, or be in a different state, after certain user interactions. For instance:
+* 		When you click on an input element, and a blue border is added showing that it is in focus.
+* 		When you click on a blue <a> link to visit to another page, but when you return the link’s text is purple.
+* 		When you’re filling out a form and the submit button is grayed out and disabled. But when all of the fields have been filled out, the button has color showing that it’s active.
+These are all examples of pseudo-class selectors in action! In fact, :focus, :visited, :disabled, and :active are all pseudo-classes. Factors such as user interaction, site navigation, and position in the document tree can all give elements a different state with pseudo-class.
+A pseudo-class can be attached to any selector. It is always written as a colon : followed by a name. For example p:hover.
+p:hover {
+  background-color: lime;
+}
+In the above code, whenever the mouse hovers over a paragraph element, that paragraph will have a lime-colored background.
+
+
+          </td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
 </html>

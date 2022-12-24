@@ -1,0 +1,29 @@
+h2{
+    width:100%;
+    border: solid 1px blue;
+    background-color:pink;
+    font-size:70px;
+    background-color:black;
+    color: white;
+    text-align: center;
+  }
+  
+  .header{
+    word-spacing:20px;
+  }
+  .photo{
+    background-color:hsl(30,60%,50%);
+    font-family:'brush script mt';
+  }
+  table{
+    color:blue;
+    background-color:hsla(70,80%,50%,0.5);
+    line-height:30px;
+    font-size:20px;
+  }
+  th{
+    background-color:white;
+  }
+  
+  
+  
